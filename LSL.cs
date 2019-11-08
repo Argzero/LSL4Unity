@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Collections;
 
@@ -930,13 +930,13 @@ public class liblsl
 	{
 
 #if (UNITY_EDITOR_WIN && UNITY_EDITOR_64)
-		const string libname = "liblsl64";
+	   const string libname = "liblsl64";
 #elif UNITY_EDITOR_WIN
-		const string libname = "liblsl32";
+	   const string libname = "liblsl32";
 #elif UNITY_STANDALONE_WIN
-		// a build hook will took care that the correct dll will be renamed after a successfull build 
-		const string libname =  "liblsl";
-#elif (UNITY_EDITOR_LINUX && UNITY_EDITOR_64) || UNITY_STANDALONE_LINUX
+	   // a build hook will took care that the correct dll will be renamed after a successfull build 
+	   const string libname =  "liblsl";
+#elif (UNITY_EDITOR_LINUX && UNITY_EDITOR_64)
 	   const string libname = "liblsl64.so";
 #elif UNITY_EDITOR_LINUX
 	   const string libname = "liblsl32.so";
